@@ -3,59 +3,180 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- viewport mowi że przygotowaliśmy stronę responsywnie -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anlink - blog</title>
+    <meta name="description" content="Najlepszy projekt stron internetowych w najlepszych cenych">
+    <meta name="author" content="Krzysztof Wiśniewski">
+    <!-- słowa kluczowe do wyszukania -->
+    <meta name="keywords" content="strony internetowe, tanio, dobrze">
+    <style>
+        /* ...style css */
+    </style>
+    <!-- link do styli -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link do skryptu -->
+    <script src="script.js"></script>
+    <!-- Favicon -->
+    <title>Favicon</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Dzien02/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Dzien02/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Dzien02/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Dzien02/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/Dzien02/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link link rel="shortcut icon" href="/Dzien02/Favicon/favicon.ico">
 </head>
 
 <body>
-    <header>
-        <h1> 🚀 Anlink - blog ✉️</h1>
-        <a href="#">kup teraz</a>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="/">Start</a></li>
-            <li><a href="aktualnosci.html">Aktualnosci</a></li>
-            <li><a href="omnie.html">O mnie</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article>
-            <h1>Tytuł artykułu 1</h1>
-            <div class="author">Krzysztof Wiśniewski</div>
-            <img src="grafika.png" alt="samochód">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos quisquam ducimus expedita laboriosam,
-                ab laborum vero ad, veritatis sunt eveniet aut. Voluptatum laudantium, amet delectus impedit deleniti
-                harum totam!</p>
-            <a href="artykul1.html">Czytaj więcej...</a>
-        </article>
-        <article>
-            <h1>Tytuł artykułu 2</h1>
-            <img src="samochod.png" alt="samochód">
-            <p>Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin tempor id. A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat scelerisque. Feugiat in fermentum posuere urna nec tincidunt praesent. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Et malesuada fames ac turpis egestas sed. Sit amet nisl suscipit adipiscing bibendum est ultricies. Arcu ac tortor dignissim convallis aenean et tortor at. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Eros donec ac odio tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur. Est placerat in egestas erat imperdiet. Consequat interdum varius sit amet mattis vulputate enim.</p>
-            <a href="artykul2.html">Czytaj więcej...</a>
-        </article>
-        <article>
-            <h1>Tytuł artykułu 3</h1>
-            <img src="grafika.png" alt="samochód">
-            <p>Sit amet nulla facilisi morbi tempus. Nulla facilisi cras fermentum odio eu. Etiam erat velit scelerisque in dictum non consectetur a erat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Ut sem nulla pharetra diam. Fames ac turpis egestas maecenas. Bibendum neque egestas congue quisque egestas diam. Laoreet id donec ultrices tincidunt arcu non sodales neque. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Faucibus interdum posuere lorem ipsum dolor sit.</p>
-            <a href="artykul3.html">Czytaj więcej...</a>
-        </article>
-    </main>
-    <!-- aside jest trescia wyodrebnioną -->
-    <aside></aside>
-    <!-- sekcja -->
-    <section class="about">
-        <p>To jest sekcja</p>
-        <a href=""><img src="art1.jpg" alt="aa"></a>
-        <a href=""><img src="art2.jpg" alt="bb"></a>
-        <a href=""><img src="art3.jpg" alt="cc"></a>
-        <a href="http://www.anlink.pl">Anlink</a>
-    </section>
-    <footer>
-        <p> &copy; 2020 - 2021 Anlink. Wszelkie prawa zastrzeżone 👍 </p>
-    </footer>
+    <div class="wrap">
+        <header>
+            <h1> 🚀 Anlink - blog ✉️</h1>
+            <a href="#">kup teraz</a>
+        </header>
 
+        <nav>
+            <ul>
+                <!-- <li><a href="/">Start</a></li> to idzie o katalog do góry chyba? -->
+                <li><a href="#">Start</a></li>
+                <li><a href="aktualnosci.html">Aktualnosci</a></li>
+                <li><a href="omnie.html">O mnie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="">
+                <label>Podaj imię i nazwisko:
+                    <input type="text" placeholder="imię i nazwisko" required><br>
+                </label>
+                <label>Podaj e-mail:
+                    <input type="email" placeholder="podaj e-mail" required><br>
+                </label>
+                <!-- <label>Podaj hasło:
+                <input type="password"><br>
+            </label> -->
+                <label>Podaj ulicę:
+                    <input type="text" placeholder="wpisz ulicę" required><br>
+                </label>
+                <input type="radio"><br>
+                <input type="checkbox"><br>
+                <textarea name="Wiadomość" id="" cols="30" rows="10"></textarea><br>
+                <button>Zatwierdź</button>
+            </form>
+            <article>
+                <h1>Artykuł 1 - Alpy wschodnie</h1>
+                <div class="author"><strong>Krzysztof Wiśniewski</strong></div>
+                <img src="img/motocykl.png" alt="motocykl" title="To miał być motocykl">
+                <p>Prawie do ostatniej chwili nie wiedziałem, czy uda mi się pojechać w Alpy. <strong>Sporo spraw
+                        wstrzymywało mnie
+                        prawie do ostatniego dnia.</strong> Na szczęście udało się.
+                    Trasy i przełęcze, które mieliśmy przejechać, opracował już od dawna Marek. Tym razem padło na Alpy
+                    wschodnie w Austrii, Włoszech i trochę na Słowenii.
+                    Przyznam, że nie doceniłem planu, który okazał się bardzo ambitny, szczególnie jeżeli chodzi o ilość
+                    kilometrów. Na szczęście pogodę mieliśmy dobrą i bardzo dobrą.</p>
+                <a href="artykul1.html">Czytaj więcej...</a>
+            </article>
+            <article>
+                <h1>Tytuł artykułu 2</h1>
+                <img src="img/samochod.png" alt="samochód" title="Fajny samochód">
+                <p>Senectus et netus et malesuada. <em>Nunc pulvinar sapien et ligula ullamcorper malesuada proin.</em>
+                    Neque
+                    convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin
+                    tempor
+                    id. <strong>lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat
+                        scelerisque.
+                        Feugiat
+                        in fermentum posuere urna nec tincidunt praesent. Porttitor rhoncus dolor purus non enim
+                        praesent
+                        elementum facilisis</strong>. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus.
+                    Ipsum
+                    faucibus vitae
+                    aliquet nec ullamcorper sit amet risus. Et malesuada fames ac turpis egestas sed. Sit amet nisl
+                    suscipit
+                    adipiscing bibendum est ultricies. Arcu ac tortor dignissim convallis aenean et tortor at. Pretium
+                    viverra suspendisse potenti nullam ac tortor vitae purus. Eros donec ac odio tempor orci dapibus
+                    ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur. Est
+                    placerat in
+                    egestas erat imperdiet. Consequat interdum varius sit amet mattis vulputate enim.</p>
+                <a href="artykul2.html">Czytaj więcej...</a>
+            </article>
+            <article>
+                <h1>Tytuł artykułu 3</h1>
+                <img src="img/photo1.png" alt="samochód" title="Fajne zdjęcie skrzyżowania">
+                <!-- <span> trzeba ostylować w CSS aby zadziałał -->
+                <p>Sit amet nulla facilisi morbi tempus. Nulla facilisi cras fermentum odio eu. Etiam erat velit
+                    scelerisque
+                    in dictum non consectetur a erat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere.
+                    Ut
+                    sem nulla pharetra diam. <span>Fames ac turpis egestas maecenas. Bibendum neque egestas congue
+                        quisque
+                        egestas
+                        diam. Laoreet id donec ultrices tincidunt arcu non sodales neque. Eget felis eget nunc lobortis
+                        mattis
+                        aliquam faucibus purus</span>. Faucibus interdum posuere lorem ipsum dolor sit.</p>
+                <a href="artykul3.html">Czytaj więcej...</a>
+                <!-- nawigacja może być również w artykule -->
+                <nav>
+                    <a href="/html/">HTML</a> |
+                    <a href="/css/">CSS</a> |
+                    <a href="/js/">JavaScript</a> |
+                    <a href="/python/">Python</a>
+                </nav>
+            </article>
+            <article>
+                <h1>Tytuł artykułu 4</h1>
+                <img src="img/samochod.png" alt="samochód" title="Fajne zdjęcie">
+                <p>Senectus et netus et malesuada. <em>Nunc pulvinar sapien et ligula ullamcorper malesuada proin.</em>
+                    Neque
+                    convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin
+                    tempor
+                    id. A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat scelerisque.
+                    Feugiat
+                    in fermentum posuere urna nec tincidunt praesent. Porttitor rhoncus dolor purus non enim praesent
+                    elementum facilisis. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ipsum faucibus
+                    vitae
+                    aliquet nec ullamcorper sit amet risus. Et malesuada fames ac turpis egestas sed. Sit amet nisl
+                    suscipit
+                    adipiscing bibendum est ultricies. Arcu ac tortor dignissim convallis aenean et tortor at. Pretium
+                    viverra suspendisse potenti nullam ac tortor vitae purus. Eros donec ac odio tempor orci dapibus
+                    ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur. Est
+                    placerat in
+                    egestas erat imperdiet. Consequat interdum varius sit amet mattis vulputate enim.</p>
+                <a href="artykul4.html">Czytaj więcej...</a>
+            </article>
+            <br><br>
+            <a href="#">Do góry</a>
+            <br>
+            <a href="http://onet.pl">Onet.pl</a>
+        </main>
+        <!-- aside jest trescia wyodrębniona np. tak jak w książce -->
+        <aside></aside>
+        <!-- sekcja -->
+        <section class="about">
+            <h1>The address element</h1>
+            <address>
+                Written by <a href="mailto:kwisniewski@anlink.pl">Krzysztof Wiśniewski</a>.<br>
+                Visit us at: <a href="anlink.pl">anlink.pl</a><br>
+                Box 564, Disneyland<br>
+                POLAND
+            </address>
+            <a href=""><img src="/Dzien02/img/motocykl.png" alt="aa"></a>
+            <a href=""><img src="/Dzien02/img/photo1.png" alt="bb"></a>
+            <a href=""><img src="/Dzien02/img/samochod.png" alt="cc"></a>
+            <a href="http://www.anlink.pl">Anlink</a>
+            <!-- nawigacja może być również w sekcji -->
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/python/">Python</a>
+            </nav>
+        </section>
+        <footer>
+            <p> &copy; 2021 Anlink. Wszelkie prawa zastrzeżone 👍 </p>
+        </footer>
+    </div>
 </body>
 
 </html>
